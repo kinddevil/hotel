@@ -1,0 +1,62 @@
+<% if(RoomDetails == null) {
+%>
+<li>
+	<fieldset>
+		<legend>Room <%= n+1 %></legend>
+			<label for="adultCountRoom<%= n+1 %>"></label>
+			<span>Adults
+				<span>(18+)</span>
+			</span>
+			<select name="adultCountRoom<%= n+1 %>" id="adultCountRoom<%= n+1 %>">
+				<option value="1">1</option>
+				<option value="2" selected="">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select><br>
+			<label for="childrenCountRoom1"></label>
+			<span class="label">Children
+				<span>(0-17)</span>
+			</span>
+			<select name="childrenCountRoom<%= n+1 %>" id="childrenCountRoom<%= n+1 %>">
+				<option value="0" selected="">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+	</fieldset>
+	<input type="button" class="deleteRoom" id="deleteRoom-<%= n %>" value="delete"/>
+</li>
+<%} else{ 
+	for(var i=0;i<RoomDetails.length;i++){
+%>
+<li>
+	<fieldset>
+		<legend>Room <%= i+1 %></legend>
+			<label for="adultCountRoom<%= i+1 %>"></label>
+			<span>Adults
+				<span>(18+)</span>
+			</span>
+			<select name="adultCountRoom<%= i+1 %>" id="adultCountRoom<%= i+1 %>">
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+			</select><br>
+			<label for="childrenCountRoom1"></label>
+			<span class="label">Children
+				<span>(0-17)</span>
+			</span>
+			<select name="childrenCountRoom<%= i+1 %>" id="childrenCountRoom<%= i+1 %>">
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+			</select>
+	</fieldset>
+	<input type="button" class="deleteRoom" id="deleteRoom-<%= i %>" value="delete"/>
+</li>
+<%	
+
+	}
+
+}%>

@@ -1,0 +1,53 @@
+<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+<section id="signupTemplate">
+
+    <div id="signup" class="panel panel-info">
+        <div class="panel-heading">Sign up</div>
+        <div class="panel-body">
+            <form id="signUpForm">
+                    <div class="span5">
+                        <label class="span2" for="email">Email</label>
+                        <input type="text" id="email" class="span3" name="email" />
+                    </div>
+                    <div class="span5">
+                        <label class="span2" for="firstname">First Name</label>
+                        <input type="text" id="firstname" class="span3" name="firstname" />
+                    </div>
+                    <div class="span5">
+                        <label class="span2" for="lastname">Last Name</label>
+                        <input type="text" id="lastname" class="span3" name="lastname" />
+                    </div>
+
+                    <div class="span5">
+                        <label class="span2" for="password">Password</label>
+                        <input type="password" id="password" class="span3" name="password" autocomplete="off"/>
+                    </div>
+                    <div class="span5">
+                        <label class="span2" for="cpassword">Comfirm Password</label>
+                        <input type="password" id="cpassword" class="span3" name="cpassword" autocomplete="off"/>
+                    </div>
+                    <div class="span5">
+                        <label class="span2" for="currency">Default Currency</label>
+                        <!-- 
+                        <input type="text" id="currency" class="span3" name="currency" />
+                        -->
+                        <select id="currency" class="span3" name="currency" style="margin-left: 0; font-size: 12px;">
+                            
+                        </select>
+                    </div>
+
+
+                    <div class="span8">
+                        <label class="span2" for="address">Address</label>
+                        <input type="text" id="address" class="span5" name="address" />
+                    </div>
+                    <div class="span8">
+                        <button type="button" class="btn btn-primary" id="signupBtn">Sign up</button>
+                        <a href="#reguser" id='olduser'>already registered? Sign in</a>
+                    </div>
+            </form>
+        </div>
+        
+    </div>
+
+</section>

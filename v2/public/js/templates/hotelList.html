@@ -1,0 +1,74 @@
+<style>
+.hotelList li{
+	cursor:pointer;
+}
+#paginator{
+	list-style: none;
+}
+#paginator li{
+	display: inline-block;
+	margin:0px 10px;
+}
+.hotelListItem{
+	cursor:pointer;
+}
+.roomListContainer{
+	margin:20px 0px;
+	display:none;
+}
+</style>
+
+<label for="noOfPages">Select items per page: </label>
+<select id="noOfPages">
+	<option value="10">10</option>
+	<option value="20">20</option>
+	<option value="30">30</option>
+</select>
+<!-- <section class="wrapper">
+	<ul class="hotelList"> -->
+
+		
+    <%for(var i=offset;i<maxLength;i++){%>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+					<div class="hotelListItem" id="<%=collection.models[i].cid%>">
+					<%=collection.models[i].get("hotelName")%>
+				</div>
+				</div>
+
+  				<div class="panel-body">
+				
+				
+				<span style="float:right">
+					LowRate <%=collection.models[i].get("lowRate")%>, Rating - <%=collection.models[i].get("hotelRating")%>
+				</span>
+
+				<span style="float:right">
+					providerId <%=collection.models[i].get("providerId")%>, HotelId - <%=collection.models[i].get("hotelId")%>
+				</span>
+<span style="float:right">
+					Address <%=collection.models[i].get("address1")%>, City - <%=collection.models[i].get("city")%>
+				</span>
+
+				<p>Provider Name: <%= collection.models[i].get("provider")%></p>
+
+<div><a class='btn btn-primary' href='<%= collection.models[i].get("deepLink")%>'>Expedia</a></div>
+
+				</div>
+				<div class="roomListContainer">
+				</div>
+			  </div>
+</div>
+
+		<%}%>
+
+<!-- 		
+	</ul>
+</section> -->
+
+<nav>
+	<ul id="paginator">
+		
+	</ul>
+</nav>

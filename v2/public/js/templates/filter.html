@@ -1,0 +1,23 @@
+<script src="js/libs/jquery-ui-1.10.4.custom.min.js"></script>
+<link rel="stylesheet" href="css/jquery-ui-1.10.4.custom.min.css" />
+<div class="panel panel-default">
+	 <div class="panel-heading">Filter</div>
+    <div class="panel-body">
+        <form>
+            <label for="searchHotelName">Search Hotel Name</label>
+            <input type="text" id="searchHotelName" name="searchHotelName" value="<%=searchHotelName%>" />
+<!--             <label for="filterProvider">Search By Provider</label>
+            <input type="text" id="filterProvider" name="filterProvider" value="<%=filterProvider%>" /> -->
+            <label for="sorting">Sort By</label>
+            <select id="sorting">
+                <option value="" selected>Please select</option>
+                <option value="hotelName">Hotel name</option>
+                <option value="hotelRating-low">Hotel rating (low to high)</option>
+                <option value="hotelRating-high">Hotel rating (high to low)</option>
+                <option value="price-low">Price (low to high)</option>
+                <option value="price-high">Price rating (high to low)</option>
+            </select>
+        </form>
+    </div>
+
+</div>

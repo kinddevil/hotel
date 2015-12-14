@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Trazigo - World's largest property listing</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/bootstrap.css">
+    <script src="js/autocomplete.js"></script>
+    <script src="js/hotelmap.js"></script>
+    <script src="js/libs/require.js" data-main="js/main"></script>
+
+</head>
+<style>
+.ajaxLoader , .authLoader{
+    display: none;
+    position: absolute;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(280, 280, 175, .8) url('images/ajaxLoader.gif') 50% 50% no-repeat;
+}
+</style>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-inner">
+                <div class="container">
+                    <a class="brand" href="index.html">
+                        <img src="images/logo.png">
+                    </a>
+
+                    <p id="sign" class="navbar-text navbar-right">
+                        <a href="/#/farerules" class="btn btn-primary sign" role="button" style="display:inline">
+                            <span class="glyphicon glyphicon-user"></span><font>Sign in</font></a>
+
+                        <a href="/#/farerules" class="btn btn-primary out" role="button" style="display:none">
+                            <font>Log Out</font></a>
+                    </p>
+
+
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!--  Main Content -->
+
+    <div class="container">
+        <div class="">
+            <div id="signBtn">
+                
+            </div>
+            <div class="authLoader"></div>
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-9">
+                <div id="searchView">
+
+                </div>
+
+                <div id="listView">
+
+                    <div class="ajaxLoader"></div>
+                </div>
+
+            </div>
+
+            <div class="col-md-3">
+                <div id="filterView">
+
+                </div>
+
+                <div class="panel panel-default" id="trending-destination">
+                </div>
+            </div>
+
+
+
+
+
+            <!-- <div id="searchView" class="col-md-3">
+
+            </div> -->
+        </div>
+    </div>
+
+
+
+    <div id="main-footer">
+        <div class="container">
+            <div class="row">
+                <div id="footer-1" class="span5">
+                    <h3>TEST</h3>
+                    <p>
+                        <strong>Themeclue</strong>is the easiest way to find the theme you need. It showcases only the
+                        <strong>best themes</strong>for Wordpress, Joomla, Drupal, Magento and many other content management systems. Just answer four simple questions or use the advanced filtering system for a perfect search.</p>
+                    <div class="pipe pull-left"></div>
+                    <div class="counter">393</div>
+                    <div class="featured-clues">Featured Clues</div>
+                </div>
+                <!-- footer-1 -->
+                <div id="footer-2" class="span4">
+                    Careers
+                    <h3>Investor Relations</h3>
+                    <h3>Privacy</h3>
+                    <h3>Careers</h3>
+                    <h3>Careers</h3>
+                </div>
+                <!-- footer-2 -->
+                <div id="footer-3" class="span3">
+                    <h3>Newsletter</h3>
+                    <p>Enter your email to receive our
+                        <strong>newsletter</strong>
+                    </p>
+                    <form name="newsletter" method="post">
+                        <input name="email" class="span3" type="text" placeholder="">
+                        <button type="button" class="btn" onclick="ctrl_newsletter('',2)">SUBSCRIBE</button>
+                    </form>
+                </div>
+                <!-- footer-3 -->
+            </div>
+        </div>
+    </div>
+    <footer id="footer">
+        <div id="bottom-footer" class="container">
+            <div class="pull-left">
+                <p>
+                    <strong><a href="">Trazigo Limited - NZ Limited Liability Company</a>
+                    </strong>Copyright © 2014. All themes © their respective owners |
+                    <strong><a href="/about">About</a>
+                    </strong>|
+                    <strong><a href="/blog">Blog</a>
+                    </strong>|
+                    <strong><a href="/terms">Terms</a>
+                    </strong>|
+                    <strong><a href="/privacy">Privacy</a>
+                    </strong>
+                </p>
+            </div>
+            <div class="pull-right">
+                <p>Contact us at
+                    <strong><a href="mailto:support@trazigo.com">support@trazigo.com</a>
+                    </strong>
+                </p>
+            </div>
+        </div>
+        <!-- bottom-footer -->
+    </footer>
+</body>
+
+</html>
